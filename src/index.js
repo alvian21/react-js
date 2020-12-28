@@ -4,10 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Home from './container/Home/Home';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import rootReducer from './reducer/globalReducer';
+
+
+//store
+const globalStore = createStore(rootReducer);
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <Provider store={globalStore}>
+      <Home />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

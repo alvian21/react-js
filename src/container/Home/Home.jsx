@@ -29,31 +29,6 @@ class Home extends Component {
     render() {
         return (
             <Router>
-                {/* <div>
-                    <p>Youtube Component</p>
-                    <hr />
-                    <YouTubeComp time="7.12" title="Youtube 1" />
-                    <YouTubeComp time="8.02" title="Youtube 2" />
-                    <YouTubeComp time="5.04" title="Youtube 3" />
-                    <YouTubeComp time="4.12" title="Youtube 4" />
-                    <YouTubeComp />
-
-                    <p>Counter</p>
-                    <hr />
-                    <Product />
-
-                    <p>LifeCycle Component</p>
-                    <hr />
-                    {
-                        this.state.showComponent ?
-                            <LifeCycleComp /> : null
-                    }
-
-                    <p>Blog Post</p>
-                    <hr />
-                    <BlogPost />
-
-                </div> */}
                 <Fragment>
                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
                         <a className="navbar-brand" href="#">Navbar</a>
